@@ -1,0 +1,29 @@
+.parent {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    
+.child-right {
+      height: 100%;
+    }
+    
+.child{
+       font-family: 'Lobster', cursive;
+       color:white;
+       margin-left:700px;
+     }
+	
+.note-resizebar{
+     background-color:#26a69a;
+    }
+
+.parent{
+     background-color:#26a69a;
+	 }
+/*.note-editable
+   {
+   background-color:#778899 !important;
+   color:white !important;
+   }
+*/

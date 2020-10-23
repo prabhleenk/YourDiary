@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/icon" href="image/circle-cropped.png">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/editor.css">
+  <title>YourDiary Editor</title>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+  <script type="text/javascript" src="javaScript/editor.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+</head>
+<body >
+  <div class = "parent">
+      <h6 class="child"style="float: left;"></h6>
+    <div class="child-right" style="float: right;">
+      <input class="waves-effect waves-light btn-small" type="button" value="Save" style="float: right|center;"  onclick="showData()">
+      <input class="waves-effect waves-light btn-small" type="button" value="Logout" style="float: right|center;">
+  </div>
+  </div>
+
+  <div id="summernote" style="height: 100%" >   </div>
+
+  <div id='key' style="display: none;"></div>
+
+
+
+  <script>
+  $(document).ready(function() {
+        $('#summernote').summernote();
+        load();
+    });
+
+  </script>
+
+</body>
+</html>

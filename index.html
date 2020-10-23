@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/icon" href="image/circle-cropped.png">
+  <link rel="stylesheet" type="text/css" href="css/preloader.css">
+  <link rel="stylesheet" type="text/css" href="css/firstpage.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body onload="load()" style="margin:0;">
+
+<div id="hollowLoader">
+    <div class="largeBox">
+        <div class="smallBox"></div>
+    </div>
+</div>
+
+<div style="display:none;" id="myDiv">
+<img src="image/circle-cropped.png" alt="YourDiary" id="logo">
+    <div><h1 id="font">To use Editor on your computer:</h1>
+        <h2 id="font"> 1). Open Editor on your phone. <br>
+            2). Point your phone to this screen to capture this code.
+        </h2>
+    </div>
+    <div>
+        <div id="qrcode"></div>
+        <script type="text/javascript" src="qrCode.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="javaScript/qrCode.js"></script>
+    </div>
+
+    <audio src="audio/scan.wav" id="myAudio"></audio>
+</div>
+
+<script>
+    var myVar;
+    function showPage() {
+        document.getElementById("hollowLoader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+</script>
+</body>
+</html>
