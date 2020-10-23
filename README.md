@@ -1,1 +1,1 @@
-# YourDairy
+# YourDiary
